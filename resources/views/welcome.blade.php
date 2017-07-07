@@ -71,7 +71,8 @@
                     @if (Auth::check())
                         <h4>Welcome, {{ Auth::user()->name }}
                     @else
-                        <h2>MONVOY</h2>
+                        <h4>MONVOY</h4>
+                        <a href="{{ route('auth.discord') }}">Login with Discord</a>
                     @endif
                 </div>
             </div>

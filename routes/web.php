@@ -15,5 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
-Route::get('auth/discord', 'Auth\DiscordController@redirectToProvider');
+Route::get('/login', function () {
+    return view('login');
+})->name('login');
+
+Route::get('auth/discord', 'Auth\DiscordController@redirectToProvider')->name('auth.discord');
 Route::get('auth/discord/callback', 'Auth\DiscordController@handleProviderCallback');
