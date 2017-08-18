@@ -19,11 +19,10 @@ class CreateRaidsTable extends Migration
             $table->foreign('region_id')->references('id')->on('regions');
             $table->integer('pokemon_id')->unsigned();
             $table->foreign('pokemon_id')->references('id')->on('pokemon');
-            $table->tinyInteger('tier');
-            $table->string('gym');
-            $table->string('google_url');
-            $table->text('description');
-            $table->timestamp('starts_at');
+            $table->tinyInteger('tier')->nullable();
+            $table->string('gym')->nullable();
+            $table->string('google_url')->nullable();
+            $table->text('description')->nullable();
             $table->timestamps();
         });
     }

@@ -28,6 +28,11 @@ class PokemonTableSeeder extends Seeder
             "Venasaur"   => 4,
             "Blastoise"  => 4,
             "Charizard"  => 4,
+            "Moltres"  => 5,
+            "Zapdos"  => 5,
+            "Articuno"  => 5,
+            "Lugia"  => 5,
+            "Mewtwo"  => 5,
         ];
 
         foreach ($pokemon as $mon => $tier) {
